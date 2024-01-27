@@ -1,0 +1,14 @@
+{
+  "appenders": {
+    "out": {
+      "type": "stdout",
+      "layout": {
+        "type": "pattern",
+        "pattern": "%[[%d{yyyy-MM-dd_hh:mm:ss.SSS}][%c][%p][%f{1}] %]%m"
+      }
+    }
+  },
+  "categories": {
+    "default": { "appenders": ["out"], "level": "TRACE", "enableCallStack": true }
+  }
+}

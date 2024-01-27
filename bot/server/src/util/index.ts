@@ -2,7 +2,6 @@
  * Miscellaneous shared functions go here.
  */
 
-
 /**
  * Get a random number between 1 and 1,000,000,000,000
  */
@@ -20,3 +19,8 @@ export function tick(milliseconds: number): Promise<void> {
     }, milliseconds);
   });
 }
+
+/**
+ * Wait `ms` milliseconds
+ */
+export const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
